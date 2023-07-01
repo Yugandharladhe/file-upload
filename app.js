@@ -19,6 +19,11 @@ app.post("/upload",upload.single("Pimage"),(req,res)=>{
     console.log(req.file)
     return res.send(req.file)
 })
+
+app.get("/",(req,res)=>{
+    console.log("welcome to api")
+})
+
 app.listen(PORT,()=>{
     console.log("app is listening")
 })
